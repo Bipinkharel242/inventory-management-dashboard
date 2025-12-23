@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Media Gallery | Inventory Management Dashboard</title>
+  <meta name="description" content="Explore operational visuals and dashboard highlights that support inventory monitoring and warehouse efficiency." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo">IM</span>
+        <div>
+          <h1 class="site-title">Inventory Management Dashboard</h1>
+          <p class="tagline">Smart Inventory Solutions for Modern Businesses</p>
+        </div>
+      </div>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        ☰
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a class="active" href="media.html">Media</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a class="nav-cta" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="main">
+    <section class="cards">
+      <div class="container">
+        <h2 class="section-title">Media Gallery</h2>
+        <p class="hero-desc">
+          Browse operational highlights and inventory workflows. Select a thumbnail to view a larger image.
+          This gallery supports visibility into stock handling, storage organisation, scanning workflows, and dashboard reporting.
+        </p>
+
+        <!-- Gallery Controls -->
+        <div class="gallery-controls" aria-label="Gallery controls">
+          <button class="btn btn-outline" type="button" id="prevBtn" aria-label="Show previous image">Previous</button>
+          <button class="btn btn-outline" type="button" id="nextBtn" aria-label="Show next image">Next</button>
+        </div>
+
+        <!-- Preview Area -->
+        <div class="gallery-preview" role="region" aria-label="Selected image preview">
+          <img id="previewImg" src="images/1.jpg" alt="Warehouse staff reviewing inventory on a tablet">
+          <p id="previewCaption" class="preview-caption">
+            Warehouse staff reviewing inventory on a tablet.
+          </p>
+        </div>
+
+        <!-- Thumbnails -->
+        <div class="thumb-grid" aria-label="Gallery thumbnails">
+          <button class="thumb" type="button"
+            data-img="images/1.jpg"
+            data-alt="Warehouse staff reviewing inventory on a tablet"
+            data-cap="Warehouse staff reviewing inventory on a tablet.">
+            <img src="images/1.jpg" alt="Thumbnail: inventory staff">
+          </button>
+
+          <button class="thumb" type="button"
+            data-img="images/2.jpg"
+            data-alt="Warehouse shelves with boxed inventory"
+            data-cap="Organised shelves showing stored inventory and labels.">
+            <img src="images/2.jpg" alt="Thumbnail: warehouse shelves">
+          </button>
+
+          <button class="thumb" type="button"
+            data-img="images/3.jpg"
+            data-alt="Barcode scanning for stock management"
+            data-cap="Barcode scanning to improve stock accuracy and tracking.">
+            <img src="images/3.jpg" alt="Thumbnail: barcode scanning">
+          </button>
+
+          <button class="thumb" type="button"
+            data-img="images/4.jpg"
+            data-alt="Inventory dashboard on laptop screen"
+            data-cap="Dashboard reporting for clearer stock decisions and planning.">
+            <img src="images/4.jpg" alt="Thumbnail: dashboard">
+          </button>
+
+          <button class="thumb" type="button"
+            data-img="images/5.jpg"
+            data-alt="Inventory checking and stock handling"
+            data-cap="Stock handling and verification to maintain inventory accuracy.">
+            <img src="images/5.jpg" alt="Thumbnail: stock handling">
+          </button>
+        </div>
+
+        <!-- Video Section -->
+        <section class="media-video" aria-label="Inventory dashboard video tour">
+          <h3 class="section-title">Inventory Dashboard Tour</h3>
+
+          <video controls width="100%" aria-label="Inventory management dashboard tour video">
+            <source src="images/6.mp4" type="video/mp4">
+            Your browser does not support the video element.
+          </video>
+
+          <p class="hero-desc">
+            A short walkthrough demonstrating key dashboard views and inventory monitoring concepts.
+          </p>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; Inventory Management Dashboard. All rights reserved. Bipin Kharel 2025 | ICT726_Assignment_3</p>
+      <p class="footer-links">
+        <a href="contact.html">Email</a> ·
+        <a href="contact.html#social">Social</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

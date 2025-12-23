@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Testimonials | Inventory Management Dashboard</title>
+  <meta name="description" content="See what clients say about Inventory Management Dashboard—trusted for clear inventory visibility, smarter reorder decisions, and reliable reporting." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo">IM</span>
+        <div>
+          <h1 class="site-title">Inventory Management Dashboard</h1>
+          <p class="tagline">Smart Inventory Solutions for Modern Businesses</p>
+        </div>
+      </div>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        ☰
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="media.html">Media</a>
+        <a class="active" href="testimonials.html">Testimonials</a>
+        <a class="nav-cta" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="main">
+    <section class="cards">
+      <div class="container">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="hero-desc">
+          Businesses use Inventory Management Dashboard to improve stock visibility, reduce shortages,
+          and streamline day-to-day inventory operations. Here are some recent client experiences.
+        </p>
+
+        <!-- Filter controls -->
+        <div class="testimonial-controls" aria-label="Testimonial filter">
+          <label for="ratingFilter">Filter by rating:</label>
+          <select id="ratingFilter">
+            <option value="all">All</option>
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+          </select>
+        </div>
+
+        <div class="testimonial-grid" id="testimonialGrid">
+          <!-- Testimonial 1 -->
+          <article class="testimonial card" data-rating="5">
+            <div class="stars" aria-label="5 star rating">★★★★★</div>
+            <p>
+              “The dashboard is clear and fast to use. We now know what’s available at a glance and can plan reorders earlier.”
+            </p>
+            <p class="t-meta"><strong>Retail Operations Manager</strong> · Sydney</p>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="testimonial card" data-rating="4">
+            <div class="stars" aria-label="4 star rating">★★★★☆</div>
+            <p>
+              “Strong layout and navigation. The reorder threshold approach helped us avoid last-minute shortages.”
+            </p>
+            <p class="t-meta"><strong>Business Owner</strong> · NSW</p>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="testimonial card" data-rating="5">
+            <div class="stars" aria-label="5 star rating">★★★★★</div>
+            <p>
+              “The reporting and stock overview are well presented. It supports quick decisions during busy warehouse shifts.”
+            </p>
+            <p class="t-meta"><strong>Warehouse Supervisor</strong> · Australia</p>
+          </article>
+
+          <!-- Testimonial 4 -->
+          <article class="testimonial card" data-rating="3">
+            <div class="stars" aria-label="3 star rating">★★★☆☆</div>
+            <p>
+              “The core workflow is solid. With expanded integrations and advanced analytics, it would be even more powerful.”
+            </p>
+            <p class="t-meta"><strong>Operations Coordinator</strong> · Melbourne</p>
+          </article>
+
+          <!-- Testimonial 5 -->
+          <article class="testimonial card" data-rating="4">
+            <div class="stars" aria-label="4 star rating">★★★★☆</div>
+            <p>
+              “Consistent styling and good usability. The contact experience and form guidance are clear and professional.”
+            </p>
+            <p class="t-meta"><strong>Inventory Coordinator</strong> · Sydney</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; Inventory Management Dashboard. All rights reserved. Bipin Kharel 2025 | ICT726_Assignment_3</p>
+      <p class="footer-links">
+        <a href="contact.html">Email</a> ·
+        <a href="contact.html#social">Social</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+  <script>
+    // Simple filter (client-side only)
+    const ratingFilter = document.getElementById("ratingFilter");
+    const cards = document.querySelectorAll(".testimonial");
+
+    if (ratingFilter && cards.length) {
+      ratingFilter.addEventListener("change", () => {
+        const value = ratingFilter.value;
+        cards.forEach(card => {
+          const r = card.getAttribute("data-rating");
+          card.style.display = (value === "all" || r === value) ? "block" : "none";
+        });
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inventory Management Dashboard | Smart Inventory Solutions</title>
+  <meta name="description" content="Inventory Management dashboard helps small businesses track stock, reduce losses, and improve ordering with simple, reliable inventory tools." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand" aria-label="Inventory Mgmt brand">
+        <span class="logo" aria-hidden="true">IM</span>
+        <div>
+          <h1 class="site-title">Inventory Management Dashboard</h1>
+          <p class="tagline">Smart Inventory Solutions for Modern Businesses</p>
+        </div>
+      </div>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        ☰
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="media.html">Media</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a class="nav-cta" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Track stock. Reduce waste. Make smarter decisions.</h2>
+
+          <!-- 20–50 words (keep this as-is or customise slightly) -->
+          <p class="hero-desc">
+            Inventory management Dashboard provides simple inventory tools that help small businesses monitor stock levels,
+            prevent shortages, reduce losses, and improve ordering accuracy using clean dashboards and alerts.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="services.html">Explore Services</a>
+            <a class="btn btn-outline" href="contact.html">Request a Demo</a>
+          </div>
+
+          <ul class="hero-points" aria-label="Key features">
+            <li>Stock tracking & reorder reminders</li>
+            <li>Supplier & product organisation</li>
+            <li>Easy reports for better planning</li>
+          </ul>
+        </div>
+
+        <figure class="hero-media">
+          <img
+            src="images/2.jpg"
+            alt="A tablet showing an inventory dashboard with stock charts"
+            loading="lazy"
+          />
+          
+        </figure>
+      </div>
+    </section>
+
+    <section class="stock-dashboard" aria-label="Remaining stock overview">
+  <div class="container">
+    <h2 class="section-title">Current Stock Overview</h2>
+    <p class="hero-desc">
+      This dashboard shows remaining stock levels for selected products.
+
+    </p>
+
+    <div class="stock-grid">
+      <article class="stock-card">
+        <h3>Wireless Barcode Scanner</h3>
+        <p class="stock-number" data-count="124">0</p>
+        <span class="stock-label">Units Remaining</span>
+      </article>
+
+      <article class="stock-card">
+        <h3>Inventory Tablets</h3>
+        <p class="stock-number" data-count="78">0</p>
+        <span class="stock-label">Units Remaining</span>
+      </article>
+
+      <article class="stock-card">
+        <h3>Storage Boxes</h3>
+        <p class="stock-number" data-count="540">0</p>
+        <span class="stock-label">Units Remaining</span>
+      </article>
+
+      <article class="stock-card warning">
+        <h3>Thermal Label Rolls</h3>
+        <p class="stock-number" data-count="19">0</p>
+        <span class="stock-label">Low Stock</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="dash-widgets" aria-label="Inventory dashboard widgets">
+  <div class="container">
+    <h2 class="section-title">Inventory Insights</h2>
+    <p class="hero-desc">
+    </p>
+
+    <div class="widget-grid">
+      <!-- Circular Counter -->
+      <article class="widget card">
+        <h3>Stock Health</h3>
+
+        <div class="ring-wrap" aria-label="Stock health progress ring">
+          <div class="ring" role="img" aria-label="Stock health 82 percent"
+               data-progress="82" data-label="Stock Health">
+            <span class="ring-value">0%</span>
+            <span class="ring-sub">In-stock rate</span>
+          </div>
+        </div>
+
+
+      </article>
+
+      <!-- Bar Chart -->
+      <article class="widget card">
+        <h3>Stock by Category</h3>
+
+        <div class="bar-chart" role="img" aria-label="Bar chart showing stock by category">
+          <div class="bar-row">
+            <span class="bar-label">Electronics</span>
+            <div class="bar-track"><div class="bar-fill" data-value="68"></div></div>
+            <span class="bar-value">68%</span>
+          </div>
+
+          <div class="bar-row">
+            <span class="bar-label">Packaging</span>
+            <div class="bar-track"><div class="bar-fill" data-value="92"></div></div>
+            <span class="bar-value">92%</span>
+          </div>
+
+          <div class="bar-row">
+            <span class="bar-label">Stationery</span>
+            <div class="bar-track"><div class="bar-fill" data-value="55"></div></div>
+            <span class="bar-value">55%</span>
+          </div>
+
+          <div class="bar-row">
+            <span class="bar-label">Consumables</span>
+            <div class="bar-track"><div class="bar-fill" data-value="41"></div></div>
+            <span class="bar-value">41%</span>
+          </div>
+        </div>
+
+      </article>
+    </div>
+  </div>
+</section>
+
+    <section class="cards">
+      <div class="container">
+        <h3 class="section-title">What we help you do</h3>
+
+        <div class="card-grid">
+          <article class="card">
+            <h4>Stay in Control</h4>
+            <p>See live stock levels and avoid running out of fast-moving items.</p>
+          </article>
+
+          <article class="card">
+            <h4>Reduce Loss</h4>
+            <p>Minimise expired, misplaced, or over-ordered stock with better tracking.</p>
+          </article>
+
+          <article class="card">
+            <h4>Work Faster</h4>
+            <p>Organise products and suppliers in one place with simple workflows.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; Inventory Management Dashboard. All rights reserved. Bipin Kharel 2025 | ICT726_Assignment_3</p>
+
+      <p class="footer-links">
+        <a href="contact.html">Email</a> ·
+        <a href="contact.html#social">Social</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
